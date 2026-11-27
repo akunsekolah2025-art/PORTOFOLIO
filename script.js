@@ -88,8 +88,8 @@ const contact = [
   },
   {
     name: "GitHub",
-    value: "GitHub Profile",
-    url: "https://github.com/",
+    value: "Rizki Ananda",
+    url: "https://github.com/akunsekolah2025-art",
     icon: "github"
   },
   {
