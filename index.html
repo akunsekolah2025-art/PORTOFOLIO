@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website portofolio pribadi Rizki Ananda Pratama">
+  <meta name="theme-color" content="#f5f7ff">
+  <title>Rizki Ananda Pratama | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">RIZKI AP<span>.</span></a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
+          <span id="themeIcon">☾</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+          <div class="availability">
+            <span class="status-dot"></span>
+            <span>Available for opportunities</span>
+          </div>
+
+          <p class="hero-intro">HALO, SAYA</p>
+          <h1 id="heroName">Rizki Ananda Pratama<span>.</span></h1>
+          <h2 id="heroRole">Web Developer & Creative Enthusiast</h2>
+
+          <p class="hero-description" id="heroTagline">
+            Saya senang membangun pengalaman digital yang kreatif,
+            fungsional, dan menarik.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Lihat Proyek <span>↗</span></a>
+            <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+          </div>
+
+          <div class="hero-social" id="heroSocial"></div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-decoration decoration-one">✳</div>
+          <div class="hero-decoration decoration-two">✦</div>
+
+          <div class="profile-frame">
+            <img src="assets/profile.jpg" alt="Foto profil Rizki" id="profileImage">
+          </div>
+
+          <div class="floating-card">
+            <span class="floating-icon">✦</span>
+            <div>
+              <strong>Creative Mind</strong>
+              <small>Always learning</small>
+            </div>
+          </div>
+
+          <div class="hero-sticker">LET'S<br>CREATE<span>!</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">01 — INTRODUCTION</p>
+          <h2>Tentang <span>Saya.</span></h2>
+          <p>Kenali lebih dekat siapa saya dan apa yang saya kerjakan.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card about-main reveal">
+            <span class="card-number">01</span>
+            <h3>Halo! Saya <span id="aboutName">Rizki Ananda Pratama</span></h3>
+            <p id="aboutDescription">
+              Saya memiliki ketertarikan pada teknologi informasi,
+              pengembangan website, dan desain digital.
+            </p>
+          </div>
+
+          <div class="about-card about-highlight reveal">
+            <span class="highlight-icon">✳</span>
+            <h3>Creative</h3>
+            <p>Menggabungkan kreativitas dan teknologi untuk menciptakan solusi.</p>
+          </div>
+
+          <div class="about-card about-highlight blue-card reveal">
+            <span class="highlight-icon">⌘</span>
+            <h3>Problem Solver</h3>
+            <p>Menyukai tantangan dan proses menemukan solusi yang efektif.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">02 — MY EXPERTISE</p>
+          <h2>Skills & <span>Abilities.</span></h2>
+          <p>Beberapa kemampuan dan teknologi yang saya pelajari.</p>
+        </div>
+
+        <div class="skills-grid" id="skillsContainer"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">03 — MY WORK</p>
+          <h2>Selected <span>Projects.</span></h2>
+          <p>Beberapa karya dan proyek yang pernah saya kerjakan.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsContainer"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper reveal">
+
+          <div class="contact-heading">
+            <p class="section-label">04 — GET IN TOUCH</p>
+            <h2>Mari Kita<br><span>Berkolaborasi.</span></h2>
+            <p>
+              Punya ide, proyek, atau ingin bekerja sama?
+              Jangan ragu untuk menghubungi saya.
+            </p>
+
+            <a href="#" class="btn btn-primary" id="emailButton">
+              Kirim Email <span>↗</span>
+            </a>
+          </div>
+
+          <div class="contact-list" id="contactContainer"></div>
+          <div class="contact-decoration">HELLO!</div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo">RIZKI AP<span>.</span></a>
+
+      <p>
+        © <span id="currentYear"></span>
+        <span id="footerName">Rizki Ananda Pratama</span>.
+        Dibuat dengan penuh kreativitas.
+      </p>
+
+      <a href="#home" class="back-top">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
